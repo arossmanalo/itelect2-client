@@ -3,36 +3,28 @@
   max-width: 640px;
   margin: 0 auto;
   padding: 24px;
-  box-sizing: border-box;
   text-align: left;
+  box-sizing: border-box;
 }
 
-.task-count {
-  opacity: 0.75;
-}
-
-.task-form {
+.task-form,
+.login-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 16px 0;
 }
 
-.task-form input {
+.task-form input,
+.login-form input {
   flex: 1;
   min-width: 0;
   padding: 8px 10px;
   font: inherit;
 }
 
-.task-form button {
-  padding: 8px 14px;
-  font: inherit;
-  cursor: pointer;
-}
-
 .task-list {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -41,10 +33,32 @@
   justify-content: space-between;
   gap: 16px;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-bottom: 1px solid var(--border);
 }
 
 .task-due-date {
   opacity: 0.75;
-  white-space: nowrap;
+}
+
+.task-form button,
+.login-form button,
+.who button {
+  padding: 8px 14px;
+  font: inherit;
+}
+
+.who {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  width: 100%;
+  margin: 0;
+  color: #d03b2f;
+}
+
+.count {
+  margin: 16px 0;
 }
